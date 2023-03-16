@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>nim game</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 <div class="modal" id="modal">
@@ -17,6 +21,53 @@
         <a href="#!" class="modal-close waves-effect btn-flat">Play!</a>
     </div>
 </div>
+
+<nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo center game-title">nim</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="reset">Reset</a></li>
+        <li><a href="index.html">Game Mode</a></li>
+        <li><a href="instructions.html">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="gameboard">
+      <div class="heap-one" id="heap-one">
+        <div class="item blue-grey lighten-3" id="h1-1"></div>
+        <div class="item blue-grey lighten-3" id="h1-2"></div>
+        <div class="item blue-grey lighten-3" id="h1-3"></div>
+      </div>
+      <div class="heap-two" id="heap-two">
+        <div class="item blue-grey" id="h2-1"></div>
+        <div class="item blue-grey" id="h2-2"></div>
+        <div class="item blue-grey" id="h2-3"></div>
+        <div class="item blue-grey" id="h2-4"></div>
+        <div class="item blue-grey" id="h2-5"></div> 
+      </div>     
+      <div class="heap-three" id="heap-three">
+        <div class="item blue-grey darken-3" id="h3-1"></div>
+        <div class="item blue-grey darken-3" id="h3-2"></div>
+        <div class="item blue-grey darken-3" id="h3-3"></div>
+        <div class="item blue-grey darken-3" id="h3-4"></div>
+        <div class="item blue-grey darken-3" id="h3-5"></div>
+        <div class="item blue-grey darken-3" id="h3-6"></div>
+        <div class="item blue-grey darken-3" id="h3-7"></div>
+        <div class="item blue-grey darken-3" id="h3-8"></div>
+        <div class="item blue-grey darken-3" id="h3-9"></div>
+      </div>
+    </div>
+
+    <div class="button-panel">
+      <h5 class="waves-effect waves-light btn-large switch-player flow-text" id="player-one">Player 1</h5>
+      <h5 class="waves-effect waves-light btn-large disabled switch-player flow-text" id="player-two">Player 2</h5>
+    </div>
+
+
+  </main>
 
 </body>
 </html>
