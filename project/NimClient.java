@@ -149,6 +149,14 @@ public class NimClient{
         connectionSock.close();
         serverInput.close();
         serverOutput.close();
+        System.out.print("Would you like to play again? (y/n): ");
+        userInput= keyboard.nextLine();
+        if(userInput.equals("n"))
+          break;
+      }
+        connectionSock.close();
+        serverInput.close();
+        serverOutput.close();
        
       }
     }
